@@ -7,7 +7,7 @@ Aplicación web (Streamlit) que usa dos modelos de Aprendizaje Automático sobre
 | ¿Conviene llamar a este cliente? (clasificación) | HistGradientBoosting | AUC 0,80; precisión 0,46; exhaustividad 0,54 |
 | ¿Cuántos contactos va a necesitar? (predicción de `campaign`) | Random Forest | RMSE 2,97 (predecir el promedio: 3,01); R² 0,03 |
 
-**App pública:** `[URL de Streamlit Community Cloud]`
+**App pública:** https://bank-marketing-unraf.streamlit.app/
 
 ## Qué hace
 - **Usar el modelo:** formulario con un campo por variable, limitado al rango observado en los datos (enteros donde corresponde, valores por defecto = mediana o moda). Devuelve la probabilidad de suscripción, el umbral del modelo, la recomendación, la posición del cliente en la lista y la tasa histórica de su tramo; y los contactos esperados con su ubicación en la distribución. Avisa cuando `pdays`, `previous` y `poutcome` son incoherentes entre sí.
