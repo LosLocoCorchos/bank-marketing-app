@@ -1,0 +1,6 @@
+streamlit>=1.30
+# scikit-learn va fijado porque los modelos .joblib dependen de la versión con la que se guardaron
+scikit-learn==1.9.1
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
